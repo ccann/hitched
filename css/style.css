@@ -1,0 +1,46 @@
+h1 {
+    font-size: 124px;
+    margin-bottom: 50px;
+}
+
+.center-text {
+    text-align: center;
+    /* width: 100%; */
+}
+
+body {
+    /* background-color: #708090; */
+}
+
+.script-font {
+    font-family: 'Tangerine', cursive;
+    font-weight: 400;
+}
+
+.menu-font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lander-img {
+    display: block;
+    /* height: 600px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    border: 8px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 80vw;
+    height:auto;
+    width:auto;
+    max-height:55vh;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.img-container {
+    width: 100%;
+}
