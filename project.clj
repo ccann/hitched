@@ -61,7 +61,7 @@
                 :source-paths ["src/cljs" "src/cljc"]
                 :jar true
                 :compiler {:main hitched.system
-                           :output-to "resources/public/js/compiled/hitched.js"
+                           :output-to "target/pages/resources/public/js/compiled/hitched.js"
                            :output-dir "target"
                            :source-map-timestamp true
                            :optimizations :advanced
