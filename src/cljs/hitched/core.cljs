@@ -1,45 +1,82 @@
 (ns hitched.core
   (:require [reagent.core :as reagent :refer [atom]]
-            [clojure.string :as str]))
+            [reagent.session :as session]
+            [secretary.core :as secretary :refer-macros [defroute]
+             :refer [dispatch!]]
+            [goog.events :as events]
+            [goog.history.EventType :as EventType]
+            [hitched.common :as com]
+            [hitched.home :as home]
+            [hitched.event :as event]
+            [hitched.travel :as travel]
+            [hitched.fun :as fun]
+            [hitched.registry :as registry]
+            [accountant.core :as accountant]
+            [hitched.rsvp :as rsvp])
+    (:import goog.history.Html5History))
 
 (enable-console-print!)
 
-(defonce app-state (atom {:text "Hello Chestnut!"}))
 
-(defn- menu-item
-  [label & [link]]
-  [:li {:class "pure-menu-item"}
-   [:a {:href  (or link "#")
-        :class "pure-menu-link menu-font"} (str/lower-case label)]])
+(defonce page (atom #'home/page))
 
+(defn current-page []
+  [:div [@page]])
 
-(defn header-menu []
-  [:div {:class "pure-menu-scrollable pure-menu-horizontal pure-menu center-text"}
-   [:ul {:class "pure-menu-list"}
-    (menu-item "Home")
-    (menu-item "RSVP")
-    (menu-item "Photos")
-    (menu-item "Events")
-    (menu-item "Wedding Party")
-    (menu-item "Travel")
-    (menu-item "Gift Registry")]])
-
-(defn names []
-  [:div [:h1 {:class "center-text script-font"} "Cody & Caroline"]])
-
-(defn spacer []
-  [:div {:class "spacer"}])
-
-(defn page []
-  [:div
-   (names)
-   (header-menu)
-   (spacer)
-   [:div {:class "img-container"}
-    [:img {:src   "lander.jpg"
-           :class "lander-img"}]]])
+;; -------------------------
+;; Routing
 
 
+;; -------------------------
+;; History
+;; must be called after routes have been defined
 
-(defn render []
-  (reagent/render [page] (js/document.getElementById "app")))
+;; (defn hook-browser-navigation! []
+;;   (doto (Html5History.)
+;;     (events/listen
+;;      EventType/NAVIGATE
+;;      (fn [event]
+;;        (secretary/dispatch! (.-token event))))
+;;     (.setEnabled true)))
+
+
+(defroute "/" []
+  (reset! page #'home/page))
+
+(defroute "/event" []
+  (reset! page #'event/page))
+
+(defroute "/travel" []
+  (reset! page #'travel/page))
+
+(defroute "/fun" []
+  (reset! page #'fun/page))
+
+(defroute "/registry" []
+  (reset! page #'registry/page))
+
+(defroute "/rsvp" []
+  (reset! page #'rsvp/page))
+
+(accountant/configure-navigation!
+ {:nav-handler
+  (fn [path]
+    (secretary/dispatch! path))
+  :path-exists?
+  (fn [path]
+    (secretary/locate-route path))})
+
+#_(hook-browser-navigation!)
+(accountant/dispatch-current!)
+
+(defn mount-root []
+  (reagent/render [current-page] (.getElementById js/document "app")))
+
+
+
+;; TODO
+;; History isn't working! wtf
+;; warnings in console about document writes
+;; warnings in console about iterator ids
+;; style pages
+;; navbar in mobile view

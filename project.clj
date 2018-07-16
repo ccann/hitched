@@ -15,8 +15,11 @@
                  [environ "1.1.0"]
                  [com.stuartsierra/component "0.3.2"]
                  [org.danielsz/system "0.4.0"]
+                 [venantius/accountant "0.2.4"]
                  [org.clojure/tools.namespace "0.2.11"]
-                 [reagent "0.6.0"]]
+                 [secretary "1.2.3"]
+                 [reagent "0.6.0"]
+                 [reagent-utils "0.3.1"]]
 
   :plugins [[lein-cljsbuild "1.1.6"]
             [lein-environ "1.1.0"]]
