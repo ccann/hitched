@@ -1,14 +1,14 @@
 # Build Journal
 
 ## Domain Name
-- bought from Google Domains
+- bought `carolineandcody.com` from Google Domains
 - added a CNAME (canonical name record) file to the repo. A CNAME file is a resource
   record in DNS which specifies a domain name as an alias for another domain (the
   canonical domain). Always points to a domain name, never an IP. I think this makes the
   github URL an alias for the domain I bought which in turn (see below) fetches content
   from github.
 - Set up custom resource records in Google Domains to point the domain at the webserver.
-
+- Apparently takes anywhere between 1 and 48 hours for changes to be reflected.
 - http://www.carolineandcody.com
 - http://carolineandcody.com
 - https://ccann.github.io/hitched/ should redirect
