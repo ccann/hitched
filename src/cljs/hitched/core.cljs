@@ -12,8 +12,7 @@
             [hitched.fun :as fun]
             [hitched.registry :as registry]
             [accountant.core :as accountant]
-            [hitched.rsvp :as rsvp])
-    (:import goog.history.Html5History))
+            [hitched.rsvp :as rsvp]))
 
 (enable-console-print!)
 
@@ -25,20 +24,6 @@
 
 ;; -------------------------
 ;; Routing
-
-
-;; -------------------------
-;; History
-;; must be called after routes have been defined
-
-;; (defn hook-browser-navigation! []
-;;   (doto (Html5History.)
-;;     (events/listen
-;;      EventType/NAVIGATE
-;;      (fn [event]
-;;        (secretary/dispatch! (.-token event))))
-;;     (.setEnabled true)))
-
 
 (defroute "/" []
   (reset! page #'home/page))
@@ -61,6 +46,7 @@
 (accountant/configure-navigation!
  {:nav-handler
   (fn [path]
+    ;; back button will call nav-handler
     (secretary/dispatch! path))
   :path-exists?
   (fn [path]
@@ -75,7 +61,6 @@
 
 
 ;; TODO
-;; History isn't working! wtf
 ;; warnings in console about document writes
 ;; warnings in console about iterator ids
 ;; style pages

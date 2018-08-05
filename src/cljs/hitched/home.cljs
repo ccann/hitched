@@ -5,6 +5,10 @@
 (defn photograph []
   [:div {:class "img-container"}
    [:img {:src "images/lander.jpg"
+          :class "lander-img"}]
+   #_[:img {:src "images/couple4.jpg"
+          :class "lander-img"}]
+   #_[:img {:src "images/couple1.jpg"
           :class "lander-img"}]])
 
 (defn names []

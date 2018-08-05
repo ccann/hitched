@@ -6,13 +6,14 @@
 (defn- menu-item
   [label & [page]]
   [:li
-   [:a {:href ""
-        :on-click     #(do (js/console.log "navigate to" page)
-                           (accountant/navigate! page)
-                           (accountant/dispatch-current!)
-                           )
+   {:key page}
+   [:a {:href     ""
+        :on-click #(do (js/console.log "navigate to" page)
+                       (accountant/navigate! page)
+                       (accountant/dispatch-current!)
+                       )
         ;; :data-trigger true
-        :class        "pure-menu-link menu-font"}
+        :class    "menu-font"}
     label]])
 
 
