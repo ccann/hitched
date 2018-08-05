@@ -61,7 +61,5 @@
 
 
 ;; TODO
-;; warnings in console about document writes
-;; warnings in console about iterator ids
 ;; style pages
 ;; navbar in mobile view
