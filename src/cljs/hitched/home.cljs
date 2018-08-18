@@ -14,18 +14,33 @@
 (defn names []
   [:div
    [:h1 {:class "center-text names-font"}
-    "Cody & Caroline"]])
+    "Caroline & Cody"]])
 
 (defn date []
   [:div
-   [:h2 {:class "center-text script-font"}
+   [:h2 {:class "center-text date-font"}
     "June 29th, 2019"]])
 
 
+(defn flowers-br []
+  [:div [:img {:src "images/flowers.jpg"
+               :class "flowers-img"}]])
+
+#_(defn flowers-left []
+  [:div [:img {:src "images/flowers4.jpg"
+               :class "flowers-left-img"}]])
+
+(defn string-lights []
+  [:div [:img {:src "images/lights-left.svg"
+               :class "lights-left"}]])
+
 (defn page []
   [:div.main
-   [com/navbar]
+   ;; [com/navbar]
+   ;; [string-lights]
    [names]
    [date]
-   [photograph]
-   [com/spacer]])
+   ;; [photograph]
+   [com/spacer]
+   [flowers-br]
+   #_[flowers-left]])

@@ -1,5 +1,8 @@
 h1 {
     font-size: 12rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
     /* margin-bottom: 10px; */
 }
 
@@ -14,7 +17,13 @@ h2 {
     /* width: 100%; */
 }
 
-body {
+body  {
+    /* background:url("../images/flowers.jpg") fixed no-repeat bottom right; */
+    /* background-color: #000; /\*Default bg, similar to the background's base color*\/ */
+    /* background-image: url("flowers.jpg"); */
+    /* background-position: right bottom; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
 }
 
 .names-font {
@@ -33,6 +42,39 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.date-font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flowers-img
+{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    max-height: 40%;
+    z-index: -1;
+}
+
+.flowers-left-img
+{
+    position: absolute;
+    /* left: 0px; */
+    bottom: 0px;
+    max-height: 40%;
+    z-index: -1;
+}
+
+.lights-left
+{
+    position: absolute;
+    left: 10px;
+    max-width: 50%;
+    z-index: -1;
+}
+
 
 .lander-img {
     display: block;
@@ -41,7 +83,7 @@ body {
     border: 8px solid rgb(255, 255, 255);
     margin: auto;
     margin-bottom: 30px;
-    max-width: 80vw;
+    max-width: 60vw;
     height:auto;
     width:auto;
     max-height:55vh;
