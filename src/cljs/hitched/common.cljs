@@ -13,20 +13,24 @@
                        (accountant/dispatch-current!)
                        )
         ;; :data-trigger true
-        :class    "menu-font"}
+        ;; :class    "menu-font"
+        }
     label]])
 
 
 (defn navbar []
-  [:div {:id "nav" :class "fourteen columns"}
-   [:ul
-    (reverse
-     [(menu-item "home" "/")
-      (menu-item "when + where" "/event")
-      (menu-item "travel + accomodations" "/travel")
-      (menu-item "things to do" "/fun")
-      (menu-item "registry" "/registry")
-      (menu-item "RSVP" "/rsvp")])]])
+  [:div.collapsible-menu
+   [:input {:type "checkbox" :id "menu"}]
+   [:label {:for "menu"}]
+   [:div.menu-content
+    ;; [:a {:href "#" :id "menu-icon"}]
+    [:ul
+     (menu-item "home" "/")
+     (menu-item "when + where" "/event")
+     (menu-item "travel + accomodations" "/travel")
+     (menu-item "things to do" "/fun")
+     (menu-item "registry" "/registry")
+     (menu-item "RSVP" "/rsvp")]]])
 
 
 
