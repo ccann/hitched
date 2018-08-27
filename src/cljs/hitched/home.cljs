@@ -21,7 +21,7 @@
 (defn flowers-br []
   [:div
    [:img {:src "images/flowers-br.jpg"
-               :class "flowers-img-br"}]])
+          :class "flowers-img-br"}]])
 
 
 (defn page []

@@ -73,6 +73,22 @@ body {
 }
 
 @media (min-width: 750px) {
+    .ceremony-1 {
+        font-size: 2.5rem;
+        /* font-weight: 500; */
+        margin-bottom: 0px;
+    }
+
+    .ceremony-2 {
+        font-size: 2.5rem;
+        /* font-weight: 500; */
+    }
+
+
+    .event-logo {
+        margin-top: 12rem !important;
+    }
+
     .flowers-img-br {
         display: none;
     }
@@ -132,6 +148,57 @@ body {
     }
 }
 
+
+
+.events-header {
+    margin-top: 4rem;
+}
+
+.address-1 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+.address-2 {
+    font-size: 1.5rem;
+}
+
+.event-logo {
+    margin-top: 3rem;
+}
+
+.almost-full-width {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.header {
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.centered-image {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.ceremony-header{ margin-top: 3rem; }
+
+.ceremony-1 {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    /* font-weight: 500; */
+    margin-bottom: 0px;
+}
+
+.ceremony-2 {
+    font-size: 1.7rem;
+    /* font-weight: 500; */
+}
+
+
 .spacer {
     height: 20px;
 }
@@ -186,9 +253,7 @@ input#menu {
     display: none;
 }
 
-.main {
-    /* margin-top: 30px; /\* Add a top margin to avoid content overlay *\/ */
-}
+
 
 .event {
     /* margin-top: 80px; */
@@ -228,5 +293,5 @@ a:visited {
 
 
 .container {
-    margin-top: 50px;
+    margin-top: 3rem;
 }

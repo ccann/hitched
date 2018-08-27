@@ -23,15 +23,14 @@
    [:input {:type "checkbox" :id "menu"}]
    [:label {:for "menu"}]
    [:div.menu-content
-    ;; [:a {:href "#" :id "menu-icon"}]
     [:ul
      (menu-item "home" "/")
      (menu-item "when + where" "/event")
-     (menu-item "travel + accomodations" "/travel")
+     (menu-item "travel" "/travel")
+     (menu-item "accommodations" "/accommodations")
      (menu-item "things to do" "/fun")
      (menu-item "registry" "/registry")
      (menu-item "RSVP" "/rsvp")]]])
-
 
 
 (defn spacer []

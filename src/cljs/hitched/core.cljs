@@ -9,6 +9,7 @@
             [hitched.home :as home]
             [hitched.event :as event]
             [hitched.travel :as travel]
+            [hitched.accommodations :as accomm]
             [hitched.fun :as fun]
             [hitched.registry :as registry]
             [accountant.core :as accountant]
@@ -33,6 +34,9 @@
 
 (defroute "/travel" []
   (reset! page #'travel/page))
+
+(defroute "/accommodations" []
+  (reset! page #'accomm/page))
 
 (defroute "/fun" []
   (reset! page #'fun/page))
