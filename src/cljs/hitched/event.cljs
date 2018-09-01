@@ -8,19 +8,23 @@
     [:a
      {:href "http://www.audreysfarmhouse.com/index.html"}
      [:img {:class "almost-full-width centered-image"
-            :src "http://www.audreysfarmhouse.com/assets/images/monogram-with-logotype-1980x612.png"}]]
-
-    [:p {:class "header center-text ceremony-header"}
-     "CEREMONY + RECEPTION"]
-    [:p {:class "center-text ceremony-1"}
-     "Saturday, June 29th at 5pm"]
-    [:p {:class "address-1 center-text"}
-     "2187 Bruynswick Road"]
-    [:p {:class "address-2 center-text"}
-     "Wallkill, New York"]
-
-
+            :src "http://www.audreysfarmhouse.com/assets/images/monogram-with-logotype-1980x612.png"}]
+     ]
     [:div.container
+     [:div.row
+     [:div {:class "seven columns"}
+      [:img {:class "u-full-width centered-image venue-img"
+             :src "images/audreys.jpg"}]]
+     [:div {:class "five columns ceremony-text" }
+      [:p {:class "header center-text ceremony-header"}
+       "CEREMONY + RECEPTION"]
+      [:p {:class "center-text ceremony-1"}
+       "Saturday, June 29th at 5pm"]
+      [:p {:class "address-1 center-text"}
+       "2187 Bruynswick Road"]
+      [:p {:class "address-2 center-text"}
+       "Wallkill, New York"]]]
+     [:hr]
      [:h6 {:class "events-header header"} "Other Events"]
 
      [:div {:class "row"}
@@ -41,8 +45,5 @@
        "FAREWELL BRUNCH "]
       [:div {:class "nine columns"}
        [:span "Sunday, June 30, brunch-time (specifics TBD)."]
-       [:p "Come by for one last hug before you hit the road."]]]]
-
-
-
-    ]])
+       [:p "Come by for one last hug before you hit the road."]]]
+     [:div {:class "spacer-xl"}]]]])

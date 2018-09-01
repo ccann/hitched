@@ -72,85 +72,18 @@ body {
     display: none;
 }
 
-@media (min-width: 750px) {
-    .ceremony-1 {
-        font-size: 2.5rem;
-        /* font-weight: 500; */
-        margin-bottom: 0px;
-    }
 
-    .ceremony-2 {
-        font-size: 2.5rem;
-        /* font-weight: 500; */
-    }
-
-
-    .event-logo {
-        margin-top: 12rem !important;
-    }
-
-    .flowers-img-br {
-        display: none;
-    }
-
-    .lander-img {
-        display: block;
-        /* height: 600px; */
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
-        border: 8px solid rgb(255, 255, 255);
-        margin: auto;
-        margin-top: 3rem;
-        margin-bottom: 30px;
-        max-width: 50vw;
-        height:auto;
-        width:auto;
-        max-height:55vh;
-    }
-
-    input:not(:checked) ~ .menu-content {
-        max-height: 100%;
-    }
-
-    li.span-full {
-        width: 100%;
-    }
-
-    li {
-        float: left;
-        display: inline-block;
-        padding-right: 3rem;
-        white-space: nowrap;
-    }
-
-    input#menu {
-        display: none;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .collapsible-menu label {
-        visibility: hidden;
-    }
-
-    .menu-content {
-        max-height: 100%;
-        display: table;
-        top: 0px;
-        right: 0px;
-        position: absolute;
-        text-align: center;
-    }
-
-    h1 {
-        margin-top: 10rem;
-    }
+li {
+    display: list-item;
 }
 
-
-
 .events-header {
+    margin-top: 4rem;
+}
+
+.travel-header {
+    font-family: 'Amatic SC', cursive;
+
     margin-top: 4rem;
 }
 
@@ -168,6 +101,7 @@ body {
 
 .almost-full-width {
     width: 90%;
+    max-width:
     box-sizing: border-box;
 }
 
@@ -175,6 +109,16 @@ body {
     letter-spacing: .2rem;
     font-weight: 600;
 }
+
+.bold {
+    font-weight: 600;
+}
+
+
+.indented {
+    margin-left: 2rem;
+}
+
 
 .centered-image {
     max-width: 60rem;
@@ -184,7 +128,7 @@ body {
     cursor: pointer;
 }
 
-.ceremony-header{ margin-top: 3rem; }
+.ceremony-header{ margin-top: 0rem; }
 
 .ceremony-1 {
     margin-top: 2rem;
@@ -202,6 +146,15 @@ body {
 .spacer {
     height: 20px;
 }
+.spacer-xl {
+    height: 18rem;
+}
+
+.mono {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+}
 
 .img-container {
     width: 100%;
@@ -212,7 +165,7 @@ a:hover#menu-icon {
     border-radius: 4px 4px 0 0;
 }
 
-ul {
+.no-list-style {
     list-style: none;
     margin-bottom: 0px;
 }
@@ -254,7 +207,6 @@ input#menu {
 }
 
 
-
 .event {
     /* margin-top: 80px; */
     font-size: 80px;
@@ -267,31 +219,149 @@ input#menu {
 
 
 a:link {
-    color: inherit;
+    color: #1d9f92;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: inherit;
+    color: #1d9f92;
     background-color: transparent;
     text-decoration: none;
 }
 
-/* a:hover { */
-/*     color: blue; */
-/*     background-color: transparent; */
-/*     text-decoration: none; */
-/* } */
+a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
 
-/* a:active { */
-/*     /\* color: yellow; *\/ */
-/*     background-color: transparent; */
-/*     /\* text-decoration: underline; *\/ */
-/* } */
+a:active {
+    background-color: transparent;
+    text-decoration: underline;
+}
 
+.nounderline {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.nounderline:hover {
+    background-color: #1d9f92;
+}
+
+.button { margin-right: 1rem;}
+
+
+.menu-link {
+    color: inherit !important;
+}
 
 
 .container {
     margin-top: 3rem;
+}
+
+.hotel-img {
+    max-height: 305px;
+}
+
+
+@media (min-width: 750px) {
+
+    .ceremony-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+    }
+
+    .ceremony-1 {
+        font-size: 2.5rem;
+        /* font-weight: 500; */
+        margin-bottom: 0px;
+    }
+
+    .ceremony-2 {
+        font-size: 2.5rem;
+        /* font-weight: 500; */
+    }
+
+
+    .event-logo {
+        margin-top: 12rem;
+    }
+
+    .flowers-img-br {
+        display: none;
+    }
+
+    .venue-img {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+        border: 8px solid rgb(255, 255, 255);
+    }
+
+    .lander-img {
+        display: block;
+        /* height: 600px; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+        border: 8px solid rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 30px;
+        max-width: 50vw;
+        height:auto;
+        width:auto;
+        max-height:55vh;
+    }
+
+    input:not(:checked) ~ .menu-content {
+        max-height: 100%;
+    }
+
+    li.span-full {
+        width: 100%;
+    }
+
+    .menu-li {
+        float: left;
+        display: inline-block;
+        padding-right: 3rem;
+        white-space: nowrap;
+    }
+
+    input#menu {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .collapsible-menu label {
+        visibility: hidden;
+    }
+
+    .menu-content {
+        max-height: 100%;
+        display: table;
+        top: 0px;
+        right: 0px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .travel-header {
+        margin-top: 12rem;
+    }
+
+    h1 {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ceremony-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(100%);
+    }
 }

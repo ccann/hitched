@@ -6,8 +6,9 @@
 (defn- menu-item
   [label & [page]]
   [:li
-   {:key page}
-   [:a {:href     ""
+   {:key page :class "menu-li"}
+   [:a {:class "menu-link"
+        :href     ""
         :on-click #(do (js/console.log "navigate to" page)
                        (accountant/navigate! page)
                        (accountant/dispatch-current!)
@@ -23,7 +24,7 @@
    [:input {:type "checkbox" :id "menu"}]
    [:label {:for "menu"}]
    [:div.menu-content
-    [:ul
+    [:ul {:class "no-list-style"}
      (menu-item "home" "/")
      (menu-item "when + where" "/event")
      (menu-item "travel" "/travel")

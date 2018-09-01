@@ -3,5 +3,7 @@
 
 (defn page []
   [:div.main
-   (com/navbar)
-   [:p "evensdffftsdddffsdd!!"]])
+   [com/navbar]
+   [:h2 {:class "center-text travel-header"} "Things to Do"]
+   [:hr]
+   [:p {:class "center-text"} "Coming Soon"]])
