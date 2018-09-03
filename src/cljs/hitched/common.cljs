@@ -10,7 +10,7 @@
    [:a {:class "menu-link"
         :href     ""
         :on-click #(do (js/console.log "navigate to" page)
-                       (accountant/navigate! page))}
+                       (accountant/navigate! (str "/#" page)))}
     label]])
 
 
