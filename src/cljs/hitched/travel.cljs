@@ -44,7 +44,13 @@
            "."]]]
         [:li [:a {:href "https://goo.gl/maps/pZagMSoopv62"}
               "From Manhattan: 1.5 hour drive via I-87"]]
-        [:li "Taxis including info about taxi companies, lack of availability of uber and lyft, and making advance taxi bookings"]]]]
+        [:li
+         [:ul
+          [:li "Uber and Lyft do operate in the area but there are limited
+          drivers. You’ll likely have better luck in towns or at the train station than
+          out at our venue."]
+          [:li "There are a number of local taxi companies. We recommend making an
+          advance booking to ensure availability."]]]]]]
 
      [:hr]
      [:h4 {:class "events-header header"} "From Afar"]

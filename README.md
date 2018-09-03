@@ -30,3 +30,12 @@ CNAME file should handle it.
 - https://medium.com/employbl/launch-a-website-with-a-custom-url-using-github-pages-and-google-domains-3dd8d90cc33b
 - https://medium.com/@jeauxcal/so-you-bought-a-google-domain-name-now-what-5fd72dffe370
 - http://blog.dnedveck.com/google-domains/github/github-pages/2016/01/10/GitHub-Pages-and-Google-Domains.html
+
+
+### Deploying
+
+on branch `gh-pages`:
+
+- `lein do clean, cljsbuild once min`
+- copy assets from resources/public/images + resources/public/css to images/ and css/
+- `cp target/pages/resources/public/js/ js/`
