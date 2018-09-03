@@ -10,7 +10,7 @@
    [:a {:class "menu-link"
         :href     ""
         :on-click #(do (js/console.log "navigate to" page)
-                       (accountant/navigate! (str "/#" page)))}
+                       (accountant/navigate! page))}
     label]])
 
 
@@ -21,12 +21,12 @@
    [:div.menu-content
     [:ul {:class "no-list-style"}
      (menu-item "home" "/")
-     (menu-item "when + where" "/event")
-     (menu-item "travel" "/travel")
-     (menu-item "accommodations" "/accommodations")
-     (menu-item "things to do" "/fun")
-     (menu-item "registry" "/registry")
-     (menu-item "RSVP" "/rsvp")]]])
+     (menu-item "when + where" "/#/event")
+     (menu-item "travel" "/#/travel")
+     (menu-item "accommodations" "/#/accommodations")
+     (menu-item "things to do" "/#/fun")
+     (menu-item "registry" "/#/registry")
+     (menu-item "RSVP" "/#/rsvp")]]])
 
 
 (defn spacer []
