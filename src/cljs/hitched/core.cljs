@@ -21,6 +21,7 @@
 (defn current-page []
   [:div [(session/get :current-page)]])
 
+(secretary/set-config! :prefix "#")
 
 ;; -------------------------
 ;; Routing
@@ -28,22 +29,22 @@
 (defroute "/" []
   (session/put! :current-page #'home/page))
 
-(defroute "/event" []
+(defroute "/#/event" []
   (session/put! :current-page #'event/page))
 
-(defroute "/travel" []
+(defroute "/#/travel" []
   (session/put! :current-page #'travel/page))
 
-(defroute "/accommodations" []
+(defroute "/#/accommodations" []
   (session/put! :current-page #'accomm/page))
 
-(defroute "/fun" []
+(defroute "/#/fun" []
   (session/put! :current-page #'fun/page))
 
-(defroute "/registry" []
+(defroute "/#/registry" []
   (session/put! :current-page #'registry/page))
 
-(defroute "/rsvp" []
+(defroute "/#/rsvp" []
   (session/put! :current-page #'rsvp/page))
 
 (accountant/configure-navigation!
