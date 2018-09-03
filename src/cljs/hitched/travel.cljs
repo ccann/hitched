@@ -44,7 +44,7 @@
            "."]]]
         [:li [:a {:href "https://goo.gl/maps/pZagMSoopv62"}
               "From Manhattan: 1.5 hour drive via I-87"]]
-        [:li
+        [:li "Taxis"
          [:ul
           [:li "Uber and Lyft do operate in the area but there are limited
           drivers. You’ll likely have better luck in towns or at the train station than
