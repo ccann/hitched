@@ -1,45 +1,61 @@
 (ns hitched.core
   (:require [reagent.core :as reagent :refer [atom]]
-            [clojure.string :as str]))
+            [reagent.session :as session]
+            [secretary.core :as secretary :refer-macros [defroute]
+             :refer [dispatch!]]
+            [goog.events :as events]
+            [goog.history.EventType :as EventType]
+            [hitched.common :as com]
+            [hitched.home :as home]
+            [hitched.event :as event]
+            [hitched.travel :as travel]
+            [hitched.accommodations :as accomm]
+            [hitched.fun :as fun]
+            [hitched.registry :as registry]
+            [accountant.core :as accountant]
+            [hitched.rsvp :as rsvp]))
 
 (enable-console-print!)
 
-(defonce app-state (atom {:text "Hello Chestnut!"}))
 
-(defn- menu-item
-  [label & [link]]
-  [:li {:class "pure-menu-item"}
-   [:a {:href  (or link "#")
-        :class "pure-menu-link menu-font"} (str/lower-case label)]])
+(defn current-page []
+  [:div [(session/get :current-page)]])
 
 
-(defn header-menu []
-  [:div {:class "pure-menu-scrollable pure-menu-horizontal pure-menu center-text"}
-   [:ul {:class "pure-menu-list"}
-    (menu-item "Home")
-    (menu-item "RSVP")
-    (menu-item "Photos")
-    (menu-item "Events")
-    (menu-item "Wedding Party")
-    (menu-item "Travel")
-    (menu-item "Gift Registry")]])
+;; -------------------------
+;; Routing
 
-(defn names []
-  [:div [:h1 {:class "center-text script-font"} "Cody & Caroline"]])
+(defroute "/" []
+  (session/put! :current-page #'home/page))
 
-(defn spacer []
-  [:div {:class "spacer"}])
+(defroute "/event" []
+  (session/put! :current-page #'event/page))
 
-(defn page []
-  [:div
-   (names)
-   (header-menu)
-   (spacer)
-   [:div {:class "img-container"}
-    [:img {:src   "lander.jpg"
-           :class "lander-img"}]]])
+(defroute "/travel" []
+  (session/put! :current-page #'travel/page))
 
+(defroute "/accommodations" []
+  (session/put! :current-page #'accomm/page))
 
+(defroute "/fun" []
+  (session/put! :current-page #'fun/page))
 
-(defn render []
-  (reagent/render [page] (js/document.getElementById "app")))
+(defroute "/registry" []
+  (session/put! :current-page #'registry/page))
+
+(defroute "/rsvp" []
+  (session/put! :current-page #'rsvp/page))
+
+(accountant/configure-navigation!
+ {:nav-handler
+  (fn [path]
+    ;; back button will call nav-handler
+    (secretary/dispatch! path))
+  :path-exists?
+  (fn [path]
+    (secretary/locate-route path))})
+
+(accountant/dispatch-current!)
+
+(defn mount-root []
+  (reagent/render [current-page] (.getElementById js/document "app")))

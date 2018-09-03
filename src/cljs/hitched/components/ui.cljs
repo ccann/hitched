@@ -1,11 +1,11 @@
 (ns hitched.components.ui
   (:require [com.stuartsierra.component :as component]
-            [hitched.core :refer [render]]))
+            [hitched.core :refer [mount-root]]))
 
 (defrecord UIComponent []
   component/Lifecycle
   (start [component]
-    (render)
+    (mount-root)
     component)
   (stop [component]
     component))

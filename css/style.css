@@ -1,6 +1,16 @@
 h1 {
-    font-size: 124px;
-    margin-bottom: 50px;
+    font-size: 10rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    /* margin-bottom: 10px; */
+}
+
+
+h2 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom:0px;
 }
 
 .center-text {
@@ -9,7 +19,20 @@ h1 {
 }
 
 body {
-    /* background-color: #708090; */
+    margin: 0px;
+}
+/* body  { */
+    /* background:url("../images/flowers.jpg") fixed no-repeat bottom right; */
+    /* background-color: #000; /\*Default bg, similar to the background's base color*\/ */
+    /* background-image: url("flowers.jpg"); */
+    /* background-position: right bottom; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+/* } */
+
+.names-font {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 500;
 }
 
 .script-font {
@@ -23,24 +46,322 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.date-font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.flowers-img-br {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px;
+    margin: 0px;
+    /* max-height: 40%; */
+    max-width: 60%;
+    z-index: -1;
+}
 
 .lander-img {
-    display: block;
-    /* height: 600px; */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
-    border: 8px solid rgb(255, 255, 255);
-    margin: auto;
-    margin-bottom: 30px;
-    max-width: 80vw;
-    height:auto;
-    width:auto;
-    max-height:55vh;
+    display: none;
 }
+
+
+li {
+    display: list-item;
+}
+
+.events-header {
+    margin-top: 4rem;
+}
+
+.travel-header {
+    font-family: 'Amatic SC', cursive;
+
+    margin-top: 4rem;
+}
+
+.address-1 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+.address-2 {
+    font-size: 1.5rem;
+}
+
+.event-logo {
+    margin-top: 3rem;
+}
+
+.almost-full-width {
+    width: 90%;
+    max-width:
+    box-sizing: border-box;
+}
+
+.header {
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+
+.indented {
+    margin-left: 2rem;
+}
+
+
+.centered-image {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.ceremony-header{ margin-top: 0rem; }
+
+.ceremony-1 {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    /* font-weight: 500; */
+    margin-bottom: 0px;
+}
+
+.ceremony-2 {
+    font-size: 1.7rem;
+    /* font-weight: 500; */
+}
+
 
 .spacer {
     height: 20px;
 }
+.spacer-xl {
+    height: 18rem;
+}
+
+.mono {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+}
 
 .img-container {
     width: 100%;
+}
+
+a:hover#menu-icon {
+    background-color: #444;
+    border-radius: 4px 4px 0 0;
+}
+
+.no-list-style {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.current {
+    color: #2262AD;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 3rem;
+    padding-top: 4rem;
+}
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+    padding-top: 7rem;
+    /* color: white; */
+    /* background-color: black; */
+    /* width: 20rem; */
+    /* float: right; */
+}
+
+.collapsible-menu label {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    padding: 20px;
+    margin: 2rem;;
+    display: block;
+    cursor: pointer;
+    background: url(../images/baseline_menu_black_18dp.png) no-repeat left center;
+}
+
+input#menu {
+    display: none;
+}
+
+
+.event {
+    /* margin-top: 80px; */
+    font-size: 80px;
+}
+
+.event-subheader {
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+
+a:link {
+    color: #1d9f92;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1d9f92;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nounderline {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.nounderline:hover {
+    background-color: #1d9f92;
+}
+
+.button { margin-right: 1rem;}
+
+
+.menu-link {
+    color: inherit !important;
+}
+
+
+.container {
+    margin-top: 3rem;
+}
+
+.hotel-img {
+    max-height: 305px;
+}
+
+
+@media (min-width: 750px) {
+
+    .ceremony-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+    }
+
+    .ceremony-1 {
+        font-size: 2.5rem;
+        /* font-weight: 500; */
+        margin-bottom: 0px;
+    }
+
+    .ceremony-2 {
+        font-size: 2.5rem;
+        /* font-weight: 500; */
+    }
+
+
+    .event-logo {
+        margin-top: 12rem;
+    }
+
+    .flowers-img-br {
+        display: none;
+    }
+
+    .venue-img {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+        border: 8px solid rgb(255, 255, 255);
+    }
+
+    .lander-img {
+        display: block;
+        /* height: 600px; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+        border: 8px solid rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 30px;
+        max-width: 50vw;
+        height:auto;
+        width:auto;
+        max-height:55vh;
+    }
+
+    input:not(:checked) ~ .menu-content {
+        max-height: 100%;
+    }
+
+    li.span-full {
+        width: 100%;
+    }
+
+    .menu-li {
+        float: left;
+        display: inline-block;
+        padding-right: 3rem;
+        white-space: nowrap;
+    }
+
+    input#menu {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .collapsible-menu label {
+        visibility: hidden;
+    }
+
+    .menu-content {
+        max-height: 100%;
+        display: table;
+        top: 0px;
+        right: 0px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .travel-header {
+        margin-top: 12rem;
+    }
+
+    h1 {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ceremony-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(100%);
+    }
 }
