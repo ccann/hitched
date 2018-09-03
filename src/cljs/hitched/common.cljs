@@ -10,12 +10,7 @@
    [:a {:class "menu-link"
         :href     ""
         :on-click #(do (js/console.log "navigate to" page)
-                       (accountant/navigate! page)
-                       (accountant/dispatch-current!)
-                       )
-        ;; :data-trigger true
-        ;; :class    "menu-font"
-        }
+                       (accountant/navigate! page))}
     label]])
 
 

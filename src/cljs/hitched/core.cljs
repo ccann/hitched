@@ -18,34 +18,33 @@
 (enable-console-print!)
 
 
-(defonce page (atom #'home/page))
-
 (defn current-page []
-  [:div [@page]])
+  [:div [(session/get :current-page)]])
+
 
 ;; -------------------------
 ;; Routing
 
 (defroute "/" []
-  (reset! page #'home/page))
+  (session/put! :current-page #'home/page))
 
 (defroute "/event" []
-  (reset! page #'event/page))
+  (session/put! :current-page #'event/page))
 
 (defroute "/travel" []
-  (reset! page #'travel/page))
+  (session/put! :current-page #'travel/page))
 
 (defroute "/accommodations" []
-  (reset! page #'accomm/page))
+  (session/put! :current-page #'accomm/page))
 
 (defroute "/fun" []
-  (reset! page #'fun/page))
+  (session/put! :current-page #'fun/page))
 
 (defroute "/registry" []
-  (reset! page #'registry/page))
+  (session/put! :current-page #'registry/page))
 
 (defroute "/rsvp" []
-  (reset! page #'rsvp/page))
+  (session/put! :current-page #'rsvp/page))
 
 (accountant/configure-navigation!
  {:nav-handler
@@ -56,14 +55,7 @@
   (fn [path]
     (secretary/locate-route path))})
 
-#_(hook-browser-navigation!)
 (accountant/dispatch-current!)
 
 (defn mount-root []
   (reagent/render [current-page] (.getElementById js/document "app")))
-
-
-
-;; TODO
-;; style pages
-;; navbar in mobile view
