@@ -31,7 +31,7 @@
       [:h6 {:class "three columns header"}
        "WELCOME GATHERING"]
       [:div {:class "nine columns"}
-       [:span "Friday, June 28, time and place TBD."]
+       [:span "Friday, June 28. More details to follow."]
        [:p "We’d love to welcome you to the Hudson Valley in person. If you’re in town, please stop by for a drink."]]]
 
      ;; [:div {:class "row"}
@@ -44,6 +44,6 @@
       [:h6 {:class "three columns header"}
        "FAREWELL BRUNCH "]
       [:div {:class "nine columns"}
-       [:span "Sunday, June 30, brunch-time (specifics TBD)."]
+       [:span "Sunday, June 30. More details to follow."]
        [:p "Come by for one last hug before you hit the road."]]]
      [:div {:class "spacer-xl"}]]]])
