@@ -9,6 +9,7 @@
      {:href "http://www.audreysfarmhouse.com/index.html"}
      [:img {:class "almost-full-width centered-image"
             :src "images/monogram.png"}]]
+
     [:div.container
      [:div.row
      [:div {:class "seven columns"}
