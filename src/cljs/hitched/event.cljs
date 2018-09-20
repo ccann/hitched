@@ -8,8 +8,7 @@
     [:a
      {:href "http://www.audreysfarmhouse.com/index.html"}
      [:img {:class "almost-full-width centered-image"
-            :src "http://www.audreysfarmhouse.com/assets/images/monogram-with-logotype-1980x612.png"}]
-     ]
+            :src "images/monogram.png"}]]
     [:div.container
      [:div.row
      [:div {:class "seven columns"}
