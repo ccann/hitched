@@ -105,6 +105,11 @@ li {
     font-weight: 600;
 }
 
+.fun-subheader {
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
 .bold {
     font-weight: 600;
 }
@@ -117,6 +122,14 @@ li {
 
 .centered-image {
     max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.centered-image-bigger {
+    max-width: 60rem;
+    min-width: 60rem;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -200,6 +213,9 @@ input#menu {
     display: none;
 }
 
+.wider {
+    max-width: 1100px;
+}
 
 .event {
     /* margin-top: 80px; */
@@ -259,6 +275,24 @@ a:active {
     max-height: 305px;
 }
 
+.venue-img {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    border: 8px solid rgb(255, 255, 255);
+}
+
+.fun-img {
+    /* margin-top: 4rem; */
+    /* margin-bottom: 4rem; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    border: 8px solid rgb(255, 255, 255);
+}
+
+.indented-sm {
+    margin-left: 3px;
+}
+
 
 @media (min-width: 750px) {
 
@@ -289,8 +323,7 @@ a:active {
     }
 
     .venue-img {
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
-        border: 8px solid rgb(255, 255, 255);
+        margin-top: 3rem;
     }
 
     .lander-img {

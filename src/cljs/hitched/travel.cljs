@@ -16,7 +16,8 @@
       [:div {:class "nine columns"}
        [:ul
         [:li "Grand Central Terminal > Beacon via "
-         [:a {:href "http://as0.mta.info/mnr/schedules/sched_form.cfm"}
+         [:a {:href "http://as0.mta.info/mnr/schedules/sched_form.cfm"
+              :target "_blank"}
           "Metro North"]
          [:ul
           [:li "Take the Metro North train from Grand Central Terminal to Beacon. The venue is a 40 minute drive from the station."]
@@ -25,7 +26,8 @@
          [:ul
           [:li "Take the Amtrak train from Grand Central Terminal to Poughkeepsie. The venue is a 40 minute drive from the station."]
           [:li "Tickets available online via "
-           [:a {:href "https://tickets.amtrak.com/itd/amtrak"}
+           [:a {:href "https://tickets.amtrak.com/itd/amtrak"
+                :target "_blank"}
             "Amtrak's website"]
            "."]]]]]]
 
@@ -36,13 +38,16 @@
        [:ul
         [:li "From Boston: 4 hour drive"
          [:ul
-          [:li [:a {:href "https://goo.gl/maps/r1yTeRUJ3KS2"}
+          [:li [:a {:href "https://goo.gl/maps/r1yTeRUJ3KS2"
+                    :target "_blank"}
                 "Via I-90 and I-87"]
            "."]
-          [:li [:a {:href "https://goo.gl/maps/fQRcR44t8RT2"}
+          [:li [:a {:href "https://goo.gl/maps/fQRcR44t8RT2"
+                    :target "_blank"}
                 "Via I-90 and I-84"]
            "."]]]
-        [:li [:a {:href "https://goo.gl/maps/pZagMSoopv62"}
+        [:li [:a {:href "https://goo.gl/maps/pZagMSoopv62"
+                  :target "_blank"}
               "From Manhattan: 1.5 hour drive via I-87"]]
         [:li "Taxis"
          [:ul

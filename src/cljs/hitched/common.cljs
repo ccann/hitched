@@ -26,7 +26,7 @@
      (menu-item "accommodations" "/#/accommodations")
      (menu-item "things to do" "/#/fun")
      (menu-item "registry" "/#/registry")
-     (menu-item "RSVP" "/#/rsvp")]]])
+     (menu-item "rsvp" "/#/rsvp")]]])
 
 
 (defn spacer []
