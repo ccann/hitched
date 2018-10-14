@@ -19,11 +19,15 @@
    [:img {:src "images/flowers-br.jpg"
           :class "flowers-img-br"}]])
 
-
 (defn page []
   [:div.main
    [photograph]
    [com/navbar]
    [text]
    [com/spacer]
-   [flowers-br]])
+   [flowers-br]
+   [:div {:class "photo-credit"}
+    "photo by "
+    [:a {:href "https://www.hclovestories.com/"
+         :target "_blank"}
+     "Hannah Cohen"]]])
