@@ -4,19 +4,15 @@
 
 (defn photograph []
   [:div {:class "img-container"}
-   [:img {:src "images/lander.jpg"
+   [:img {:src "images/couple.jpg"
           :class "lander-img"}]])
 
-(defn names []
-  [:div
-   [:h1 {:class "center-text names-font"}
-    "Caroline & Cody"]])
-
-(defn date []
-  [:div
-   [:h2 {:class "center-text date-font"}
+(defn text []
+  [:div {:class "lander-text"}
+   [:h1 {:class "lander-names names-font"}
+    "Caroline & Cody"]
+   [:h2 {:class "lander-date date-font"}
     "June 29th, 2019"]])
-
 
 (defn flowers-br []
   [:div
@@ -26,9 +22,8 @@
 
 (defn page []
   [:div.main
-   [com/navbar]
-   [names]
-   [date]
    [photograph]
+   [com/navbar]
+   [text]
    [com/spacer]
    [flowers-br]])

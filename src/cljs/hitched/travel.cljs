@@ -46,9 +46,11 @@
                     :target "_blank"}
                 "Via I-90 and I-84"]
            "."]]]
-        [:li [:a {:href "https://goo.gl/maps/pZagMSoopv62"
-                  :target "_blank"}
-              "From Manhattan: 1.5 hour drive via I-87"]]
+        [:li "From Manhattan: 1.5 hour drive "
+         [:a {:href "https://goo.gl/maps/pZagMSoopv62"
+              :target "_blank"}
+          "via I-87"]
+         "."]
         [:li "Taxis"
          [:ul
           [:li "Uber and Lyft do operate in the area but there are limited

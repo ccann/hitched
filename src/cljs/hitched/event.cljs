@@ -48,5 +48,10 @@
       [:a {:href "https://hootowlrestaurant.com/" :target "_blank"}
        "Hoot Owl"]
       ", just down the road from Audrey's."
-      [:p "Come by for one last hug before you hit the road."]]]
+      [:br]
+      [:a {:href "https://goo.gl/maps/WVfhP9QKoJx"
+           :target "_blank"}
+       "26 Awosting Rd, Pine Bush, NY 12566"]
+      [:br]
+      "Come by for one last hug before you hit the road."]]
     [:div {:class "spacer-xl"}]]])
