@@ -30,7 +30,8 @@
       rate for the Dunn-Rankin/Canning Wedding."]
       [:p "Rooms may be cancelled for a full refund until 6pm on the day of arrival."]
       [:a {:class "button nounderline"
-           :href  "https://www.redlion.com/new-paltz"}
+           :href  "https://www.redlion.com/new-paltz"
+           :target "_blank"}
        "CHECK IT OUT"]
       [:div.spacer]
       [:div.spacer]]
@@ -42,7 +43,8 @@
       [:h6 {:class "header center-text"} "HAMPTON INN NEW PALTZ ($$)"]
       [:p "4 S Putt Corners Road, New Paltz, NY 12561 - (845) 255-4200"]
       [:p "Please use "
-       [:a {:href "http://group.hamptoninn.com/DunnRankinCanningWedding"}
+       [:a {:href "http://group.hamptoninn.com/DunnRankinCanningWedding"
+            :target "_blank"}
         "this link"]
        " or the button below to book your rooms using our group rate. There is a
        two-night minimum for this rate, and rooms must be booked "
@@ -50,10 +52,12 @@
        " to receive the discount."]
       [:p "Rooms may be cancelled for a full refund up to 48 hours prior to check-in."]
       [:a {:class "button nounderline"
-           :href  "http://hamptoninn3.hilton.com/en/hotels/new-york/hampton-inn-by-hilton-new-paltz-POUNPHX/index.html"}
+           :href  "http://hamptoninn3.hilton.com/en/hotels/new-york/hampton-inn-by-hilton-new-paltz-POUNPHX/index.html"
+           :target "_blank"}
        "CHECK IT OUT"]
       [:a {:class "button nounderline"
-           :href  "http://group.hamptoninn.com/DunnRankinCanningWedding"}
+           :href  "http://group.hamptoninn.com/DunnRankinCanningWedding"
+           :target "_blank"}
        "BOOK HERE"]
       [:div.spacer]]]
 
@@ -70,19 +74,24 @@
       [:p "There are many wonderful bed and breakfasts and smaller hotels in the area. Here
     are just a few:"]
       [:ul {:class "indented"}
-       [:li [:a {:href "http://www.innattheridge.com/"}
+       [:li [:a {:href "http://www.innattheridge.com/"
+                 :target "_blank"}
              "The Inn at the Ridge"]
         " - just down the road from the venue"]
-       [:li [:a {:href "http://www.kettleboro.com/"}
+       [:li [:a {:href "http://www.kettleboro.com/"
+                 :target "_blank"}
              "The Inn at Kettleboro"]
         " – 15 minutes from the venue"]
-       [:li [:a {:href "https://www.minnewaskalodge.com/"}
+       [:li [:a {:href "https://www.minnewaskalodge.com/"
+                 :target "_blank"}
              "Minnewaska Lodge"]
         " – 10 minutes from the venue"]]
-      [:p [:a {:href "https://www.airbnb.com/s/homes?refinement_paths%5B%5D=%2Fhomes&query=2188%20Bruynswick%20Road%2C%20Wallkill%2C%20NY%2012589&checkin=2019-06-28&checkout=2019-06-30&allow_override%5B%5D=&s_tag=bNhxqjE5"}
+      [:p [:a {:href "https://www.airbnb.com/s/homes?refinement_paths%5B%5D=%2Fhomes&query=2188%20Bruynswick%20Road%2C%20Wallkill%2C%20NY%2012589&checkin=2019-06-28&checkout=2019-06-30&allow_override%5B%5D=&s_tag=bNhxqjE5"
+               :target "_blank"}
            "AirBnB"]
        " and "
-       [:a {:href "https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=2&childrenCount=0&adults=2&children=0&infantsCount=0&pets=false&q=2188%20Bruynswick%20Road%2C%20Wallkill%2C%20NY%2012589&from-date=2019-06-28&to-date=2019-06-30"}
+       [:a {:href "https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=2&childrenCount=0&adults=2&children=0&infantsCount=0&pets=false&q=2188%20Bruynswick%20Road%2C%20Wallkill%2C%20NY%2012589&from-date=2019-06-28&to-date=2019-06-30"
+            :target "_blank"}
         "VRBO/HomeAway"]
        " offer lots of good options as well, especially for groups or those looking for a longer stay."]]]
     [:div.spacer-xl]
