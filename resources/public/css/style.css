@@ -6,6 +6,15 @@ h1 {
     /* margin-bottom: 10px; */
 }
 
+.lander-text {}
+
+.lander-names {
+    text-align: center;
+}
+
+.lander-date {
+    text-align: center;
+}
 
 h2 {
     font-size: 6rem;
@@ -296,6 +305,27 @@ a:active {
 
 @media (min-width: 750px) {
 
+    .lander-text
+    {
+        position: absolute;
+        top: 6rem;
+        left: 2rem;
+    }
+
+    .lander-names
+    {
+        text-align: left;
+        font-weight: 500;
+        font-size: 5rem;
+    }
+
+    .lander-date
+    {
+        text-align: left;
+        font-size: 1.5rem;
+        margin-left: 10rem;
+    }
+
     .ceremony-text {
         position: relative;
         top: 50%;
@@ -328,16 +358,9 @@ a:active {
 
     .lander-img {
         display: block;
-        /* height: 600px; */
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
-        border: 8px solid rgb(255, 255, 255);
-        margin: auto;
-        margin-top: 3rem;
-        margin-bottom: 30px;
-        max-width: 50vw;
-        height:auto;
-        width:auto;
-        max-height:55vh;
+        margin-top: 10rem;
+        width: 100%;
+        z-index:-1;
     }
 
     input:not(:checked) ~ .menu-content {
@@ -391,4 +414,26 @@ a:active {
         top: 50%;
         transform: translateY(100%);
     }
+
+    .lander-text
+    {
+        position: absolute;
+        top: 11rem;
+        left: 6rem;
+    }
+
+    .lander-names
+    {
+        text-align: left;
+        font-weight: 500;
+        font-size: 10rem;
+    }
+
+    .lander-date
+    {
+        text-align: left;
+        font-size: 2.3rem;
+        margin-left: 17rem;
+    }
+
 }
