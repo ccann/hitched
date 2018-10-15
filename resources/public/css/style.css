@@ -316,22 +316,20 @@ a:active {
         margin-right: 10rem;
     }
 
-    .lander-text
-    {
+    .lander-text {
         position: absolute;
         top: 6rem;
-        left: 2rem;
+        left: 1rem;
     }
 
-    .lander-names
-    {
+    .lander-names {
         text-align: left;
+        margin-left: 1rem;
         font-weight: 500;
         font-size: 5rem;
     }
 
-    .lander-date
-    {
+    .lander-date {
         text-align: left;
         font-size: 1.5rem;
         margin-left: 10rem;
@@ -430,21 +428,41 @@ a:active {
     {
         position: absolute;
         top: 11rem;
-        left: 6rem;
+        left: 2rem;
     }
 
     .lander-names
     {
         text-align: left;
         font-weight: 500;
-        font-size: 10rem;
+        font-size: 9rem;
     }
 
     .lander-date
     {
         text-align: left;
+        font-size: 2rem;
+        margin-left: 14rem;
+    }
+}
+@media (min-width: 1150px) {
+
+    .lander-text {
+        position: absolute;
+        top: 11rem;
+        left: 6rem;
+    }
+
+    .lander-names {
+        text-align: left;
+        font-weight: 500;
+        font-size: 10rem;
+    }
+
+    .lander-date {
+        text-align: left;
         font-size: 2.3rem;
-        margin-left: 17rem;
+        margin-left: 15rem;
     }
 
 }
