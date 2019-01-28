@@ -27,6 +27,14 @@ h2 {
     /* width: 100%; */
 }
 
+.registry-text {
+    font-size: 2rem;
+}
+
+.reg-couple-img {
+    max-width: 80rem !important;
+}
+
 body {
     margin: 0px;
 }
@@ -123,6 +131,9 @@ li {
     font-weight: 600;
 }
 
+.under {
+    text-decoration: underline;
+}
 
 .indented {
     margin-left: 2rem;
