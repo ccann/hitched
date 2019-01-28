@@ -12,7 +12,7 @@
 
 (defn zola
   []
-  [:a {:href   "www.zola.com/registry/caroline-cody-june29"
+  [:a {:href   "https://www.zola.com/registry/caroline-cody-june29"
        :target "_blank"}
    [:span {:class "under"}
     "Zola"]])
