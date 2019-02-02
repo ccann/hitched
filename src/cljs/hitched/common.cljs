@@ -1,7 +1,5 @@
 (ns hitched.common
-  (:require [secretary.core :as sec :refer-macros [defroute]
-             :refer [dispatch!]]
-            [accountant.core :as accountant]))
+  (:require [accountant.core :as accountant]))
 
 (defn- menu-item
   [label & [page]]
@@ -29,5 +27,8 @@
      (menu-item "rsvp" "/#/rsvp")]]])
 
 
-(defn spacer []
+(def spacer
   [:div {:class "spacer"}])
+
+(defn link [text link]
+  [:a {:href link :target "_blank"} text])
