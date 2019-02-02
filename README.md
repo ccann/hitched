@@ -38,7 +38,5 @@ on branch `gh-pages`:
 
 ``` bash
 lein do clean, cljsbuild once min
-cp -r resources/public/images .
-cp -r resources/public/css .
-cp -r target/pages/resources/public/js/ js/
+cp -r resources/public/images . && cp -r resources/public/css . && cp -r target/pages/resources/public/js/ js/
 ```
