@@ -37,6 +37,7 @@ CNAME file should handle it.
 
 on branch `gh-pages`:
 
-- `lein do clean, cljsbuild once min`
-- copy assets from resources/public/images + resources/public/css to images/ and css/
-- `cp target/pages/resources/public/js/ js/`
+``` bash
+lein do clean, cljsbuild once min
+cp -r resources/public/images . && cp -r resources/public/css . && cp -r target/pages/resources/public/js/ js/
+```

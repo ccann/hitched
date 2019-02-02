@@ -1,33 +1,31 @@
 (ns hitched.home
-  (:require [hitched.common :as com]))
+  (:require [hitched.common :refer [link navbar spacer]]))
 
 
-(defn photograph []
+(def photograph
   [:div {:class "img-container"}
    [:img {:src "images/couple.jpg"
           :class "lander-img"}]])
 
-(defn text []
+(def text
   [:div {:class "lander-text"}
    [:h1 {:class "lander-names names-font"}
     "Caroline & Cody"]
    [:h2 {:class "lander-date date-font"}
     "June 29th, 2019"]])
 
-(defn flowers-br []
+(def flowers-br
   [:div
    [:img {:src "images/flowers-br.jpg"
           :class "flowers-img-br"}]])
 
 (defn page []
   [:div.main
-   [photograph]
-   [com/navbar]
-   [text]
-   [com/spacer]
-   [flowers-br]
+   photograph
+   [navbar]
+   text
+   spacer
+   flowers-br
    [:div {:class "photo-credit"}
     "photo by "
-    [:a {:href "https://www.hclovestories.com/"
-         :target "_blank"}
-     "Hannah Cohen"]]])
+    (link "Hannah Cohen" "https://www.hclovestories.com/")]])

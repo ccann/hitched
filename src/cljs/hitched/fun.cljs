@@ -1,5 +1,5 @@
 (ns hitched.fun
-  (:require [hitched.common :as com]
+  (:require [hitched.common :refer [navbar spacer]]
             [clojure.string :as str]))
 
 
@@ -115,7 +115,7 @@
       [:a {:href link :target "_blank"}
        [:img {:class "u-full-width centered-image fun-img"
               :src img}]]
-      [com/spacer]
+      spacer
       [:div {:class "indented-sm"}
        [:h6 {:class "fun-subheader"} (str/upper-case name)]
        (when text [:p text])]])])
@@ -123,31 +123,31 @@
 
 (defn page []
   [:div.main
-   [com/navbar]
+   [navbar]
    [:h2 {:class "center-text travel-header"} "Things to Do"]
    [:hr]
    [:div {:class "container wider"}
 
     [:h3 {:class "center-text"} "Sites"]
-    [com/spacer]
+    spacer
     [three-cols site-entries]
     [:hr]
 
     [:h3 {:class "center-text"} "Hiking"]
-    [com/spacer]
+    spacer
     [three-cols hiking-entries]
     [:div.row [:div {:class "twelve columns"}
                [:p hiking-blurb [:a {:href hiking-link} hiking-link]]]]
     [:hr]
 
     [:h3 {:class "center-text"} "Art"]
-    [com/spacer]
+    spacer
     [three-cols art-entries]
     [:hr]
 
     [:h3 {:class "center-text"}
      "Breweries, Cideries, Wineries + Distilleries"]
-    [com/spacer]
+    spacer
     [three-cols (take 3 bev-entries)]
     [three-cols (take 3 (drop 3 bev-entries))]
     [three-cols (drop 6 bev-entries)]]])
