@@ -23,9 +23,9 @@
      (menu-item "travel" "/#/travel")
      (menu-item "accommodations" "/#/accommodations")
      (menu-item "things to do" "/#/fun")
-     (menu-item "FAQ" "/#/faq")
+     (menu-item "faq" "/#/faq")
      (menu-item "registry" "/#/registry")
-     (menu-item "RSVP" "/#/rsvp")]]])
+     (menu-item "rsvp" "/#/rsvp")]]])
 
 
 (def spacer
