@@ -3,11 +3,9 @@
             [reagent.session :as session]
             [secretary.core :as secretary :refer-macros [defroute]
              :refer [dispatch!]]
-            [goog.events :as events]
-            [goog.history.EventType :as EventType]
-            [hitched.common :as com]
             [hitched.home :as home]
             [hitched.event :as event]
+            [hitched.faq :as faq]
             [hitched.travel :as travel]
             [hitched.accommodations :as accomm]
             [hitched.fun :as fun]
@@ -41,6 +39,9 @@
 
 (defroute "/#/registry" []
   (session/put! :current-page #'registry/page))
+
+(defroute "/#/faq" []
+  (session/put! :current-page #'faq/page))
 
 (defroute "/#/rsvp" []
   (session/put! :current-page #'rsvp/page))

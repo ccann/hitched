@@ -48,7 +48,7 @@
      [:li "Taxis"
       [:ul
        [:li "Uber and Lyft do operate in the area but there are limited
-          drivers. You’ll likely have better luck in towns or at the train station than
+          drivers. You’ll likely have better luck in town or at the train station than
           out at our venue."]
        [:li "There are a number of local taxi companies. We recommend making an
           advance booking to ensure availability."]]]])])
