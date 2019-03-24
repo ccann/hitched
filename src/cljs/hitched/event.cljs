@@ -13,9 +13,7 @@
 
 (def reception
   [:div
-   [:div {:class "event-logo"}
-    (link (img "monogram.png" ["almost-full-width"]) "http://www.audreysfarmhouse.com/index.html")]
-   [:div.row
+   [:div.row.event-logo
     [:div {:class "seven columns"}
      (img "audreys.jpg" ["u-full-width" "venue-img"])]
     [:div {:class "five columns ceremony-text"}
