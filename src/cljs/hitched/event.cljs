@@ -34,8 +34,8 @@
    [:div {:class "row"}
     (subheader "welcome gathering")
     [:div {:class "nine columns"}
-     [:span "Friday, June 28, 8:00pm at the "
-      (link "Gilded Otter Brewing Company" "https://www.gildedotter.com/")
+     [:span "Friday, June 28, 8:00pm at "
+      (link "Clemson Bros. Brewery at The Gilded Otter" "https://www.gildedotter.com/ru21")
       ", overlooking the Walkill River."]
      [:br]
      (link "3 Main St, New Paltz, NY 12561" "https://goo.gl/maps/oco1ZrkjQdC2")
