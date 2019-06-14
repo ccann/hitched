@@ -7,9 +7,12 @@
    [:h2 {:class "center-text travel-header"} "Accommodations"]
    [:div.container
     [:hr]
-    [:p "Summer is a very popular time of year in the Hudson Valley (for good
-    reason!). We recommend booking accomodations early and taking advantage of flexible
-    cancellation policies if necessary."]
+    [:h4 {:class "center-text"} "Wedding Day Transportation"]
+    [:p "The shuttle will depart at " [:span {:class "bold"} "4:00pm"]
+     " from the parking lot shared by the two hotels."
+     " Return trips will begin at " [:span {:class "bold"} "9:00pm"]
+     " and proceed hourly until the last trip at "
+     [:span {:class "bold"} "1:00am"] ". There will not be a shuttle to the Brunch on Sunday morning."]
     [:hr]
     [:h4 {:class "center-text"} "Hotels"]
     [:p "We’ve blocked rooms at two hotels in New Paltz, a 20 minute drive from Audrey’s
