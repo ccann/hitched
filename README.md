@@ -41,3 +41,11 @@ on branch `gh-pages`:
 lein do clean, cljsbuild once min
 cp -r resources/public/images . && cp -r resources/public/css . && cp -r target/pages/resources/public/js/ js/
 ```
+
+### Development
+
+on `master`:
+
+``` bash
+lein figwheel
+```
