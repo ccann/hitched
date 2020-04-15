@@ -4,22 +4,22 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.671" :scope "provided"]
-                 [com.cognitect/transit-clj "0.8.300"]
-                 [ring "1.6.2"]
-                 [ring/ring-defaults "0.3.1"]
-                 [bk/ring-gzip "0.2.1"]
+  :dependencies [[org.clojure/clojure "1.10.1"]
+                 [org.clojure/clojurescript "1.10.597" :scope "provided"]
+                 [com.cognitect/transit-clj "1.0.324"]
+                 [ring "1.8.0"]
+                 [ring/ring-defaults "0.3.2"]
+                 [bk/ring-gzip "0.3.0"]
                  [radicalzephyr/ring.middleware.logger "0.6.0"]
-                 [compojure "1.6.0"]
+                 [compojure "1.6.1"]
                  [environ "1.1.0"]
-                 [com.stuartsierra/component "0.3.2"]
-                 [org.danielsz/system "0.4.0"]
-                 [venantius/accountant "0.2.4"]
-                 [org.clojure/tools.namespace "0.2.11"]
+                 [com.stuartsierra/component "1.0.0"]
+                 [org.danielsz/system "0.4.5"]
+                 [venantius/accountant "0.2.5"]
+                 [org.clojure/tools.namespace "1.0.0"]
                  [secretary "1.2.3"]
-                 [reagent "0.6.0"]
-                 [reagent-utils "0.3.1"]]
+                 [reagent "0.10.0"]
+                 [reagent-utils "0.3.3"]]
 
   :plugins [[lein-cljsbuild "1.1.6"]
             [lein-environ "1.1.0"]]
@@ -100,12 +100,12 @@
   :doo {:build "test"}
 
   :profiles {:dev
-             {:dependencies [[figwheel "0.5.11"]
-                             [figwheel-sidecar "0.5.11"]
+             {:dependencies [[figwheel "0.5.19"]
+                             [figwheel-sidecar "0.5.19"]
                              [com.cemerick/piggieback "0.2.2"]
                              [org.clojure/tools.nrepl "0.2.13"]
-                             [lein-doo "0.1.7"]
-                             [reloaded.repl "0.2.3"]]
+                             [lein-doo "0.1.11"]
+                             [reloaded.repl "0.2.4"]]
 
               :plugins [[lein-figwheel "0.5.11"]
                         [lein-doo "0.1.7"]]
