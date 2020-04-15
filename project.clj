@@ -107,7 +107,7 @@
                              [lein-doo "0.1.11"]
                              [reloaded.repl "0.2.4"]]
 
-              :plugins [[lein-figwheel "0.5.11"]
+              :plugins [[lein-figwheel "0.5.19"]
                         [lein-doo "0.1.7"]]
 
               :source-paths ["dev"]
